@@ -2,23 +2,23 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    user-select: none;;
+    user-select: none;
 }
 .bg-img{
-    background: url("bg.jpg");
+    background-color: rgba(63, 50, 50, 0.174);
     position: relative;
     height: 100vh;
-    background-size: cover;
+    background-size:cover;
     background-position:center;
 }
 .bg-img:after {
-    position: absolute;
-    content:"";
+    /* position: absolute; */
+    /* content:""; */
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(255,255,255,0.174);
+  
 }
 .content{
     border-radius: 10px;
@@ -37,7 +37,7 @@
 }
 h1{
     font-weight: bold;
-    color:black;
+    color:darkblue;
     margin: 0 0 35px 0;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -54,11 +54,12 @@ h1{
     line-height: 45%;
 }
 .field input{
+    cursor: text;
     height:100%;
     width: 100%;
     background: transparent;
     border: none;
-    outline:auto;
+    outline: none;
     color: #222;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
