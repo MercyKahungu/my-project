@@ -25,7 +25,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 100%;
+    /* z-index: 100%; */
     text-align:center;
     padding: 60px 32px;
     width: 370px;
@@ -40,6 +40,20 @@ h1{
     color:darkblue;
     margin: 0 0 35px 0;
     font-family: 'Times New Roman', Times, serif;
+}
+.social-container{
+    margin: 0px 25px;
+}
+.social-container a{
+    border: 1px solid red;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+	background: #f2eee3;
 }
 .field{
     position: relative;
@@ -72,12 +86,12 @@ h1{
     right: 13px;
     font-size: 13px;
     font-weight: bold;
-    display: none;
+    /* display: none; */
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .pass-key:valid ~show {
-    display: block;
+    display:block;
 }
 .pass {
     text-align: right;
