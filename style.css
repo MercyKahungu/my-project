@@ -33,21 +33,54 @@
     background: rgba(255,255,255,0.133);
     border: 1px solid #fff;
     backdrop-filter: blur(3px);
-    box-shadow: 0 0 6px 0 rgba(29, 29,29, 0.203);
-
+    box-shadow: 0 0 6px 0 grey;
 }
 h1{
     font-weight: bold;
+    color:black;
+    margin: 0 0 35px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
-span{
-    font-size: 12px;
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: white;
+}
+.field span{
+    color: #222;
+    width: 40px;
+    line-height: 45%;
+}
+.field input{
+    height:100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline:auto;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.space{
+    margin-top: 16px;
+}
+.show{
+    position: absolute;
+    right: 13px;
+    font-size: 13px;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .pass-key:valid ~show {
     display: block;
 }
 .pass {
-    text-align: left;
-    margin: 10px 0;
+    text-align: right;
+    margin: 30px 0;
 }
 .pass a{
     color: blue;
@@ -58,6 +91,7 @@ span{
     text-decoration: underline;
 }
 button{
+    border-radius: 10%;
     background-color:aquamarine;
     color:black;
     font-size:12px;
@@ -69,5 +103,6 @@ button{
     border-color:chartreuse;
 }
 button:hover{
-    background-color: blueviolet;
+    background:blueviolet;
 }
+
